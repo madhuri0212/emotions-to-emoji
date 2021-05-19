@@ -1,0 +1,107 @@
+
+
+
+Skip to content
+Using Gmail with screen readers
+ahana.garimasharma@gmail.com 
+Meet
+New meeting
+Join a meeting
+Hangouts
+
+1 of 59
+html
+Inbox
+
+Ahana Sharma
+4:36 PM (6 hours ago)
+to me
+
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+     <h3 class="btn btn-warning heading">EMOTION TO EMOJI APP
+
+      <br><br>
+     <span>&#128516;</span>
+     <span>&#128532;</span>
+     <span>&#128523;</span>
+     <span>&#128547;</span>
+     <span>&#128551;</span>
+     <span>&#128556;</span>
+     <span>&#128527;</span>
+     <span>&#128548;</span>
+    </h3>
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+        <br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you tierd  ?</b>
+        <br>
+        <b style="color: blue">Are you Scared?</b>
+        <br>
+        <b style="color: purple">Are you Smirking?</b>
+        
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View- </label>
+        <div id="camera">
+        </div>
+        <br>
+        <br>
+        <button class="btn btn-info" onclick="take_snapshot()">Capture Image</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1- </label>
+          <p class="emotion_name" id="result_emotion_name"></p>
+          <p class="emoji" id="update_emoji"></p>
+          <label>Prediction 2- </label>
+          <p class="emotion_name" id="result_emotion_name2"></p>
+          <p class="emoji" id="update_emoji2"></p>
+       </div>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button class="btn btn-warning" onclick="check()">Predict Emotion</button>
+        </div>
+
+
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
